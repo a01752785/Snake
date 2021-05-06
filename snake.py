@@ -33,20 +33,27 @@ def move():
         food.y = randrange(-15, 15) * 10
     else:
         snake.pop(0)
+        # Crea la variable que indica si la comida ya cambio de posición
         food_changed = False
+        # Mientras no haya cambiado la comida, sigue intentando
         while not food_changed:
-            food_changed = True
-            dir = randrange(0, 5)
+            food_changed = True # Supone que la comida cambia de posición
+            dir = randrange(0, 4) # Genera un número aleatorio entre 0 y 4
             if dir == 0 and inside(food + vector(10, 0)):
+                # Movimiento a la derecha
                 food.move(vector(10, 0))
             elif dir == 1 and inside(food + vector(0, 10)):
+                # Movimiento hacia arriba
                 food.move(vector(0, 10))
             elif dir == 2 and inside(food + vector(-10, 0)):
+                # Movimiento a la izquierda
                 food.move(vector(-10, 0))
             elif dir == 3 and inside(food + vector(0, -10)):
+                # Movimiento habia abajo
                 food.move(vector(0, -10))
-            else:
-                food_changed = False
+            else: 
+                # El movimiento no fue válido
+                food_changed = False # No se ha movido la comida
 
     clear()
 
