@@ -37,17 +37,21 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, snake_color)
+        # Escoge la posición y el color de la serpiente y la comida
+        square(body.x, body.y, 9, snake_color) 
 
     square(food.x, food.y, 9, food_color)
     update()
     ontimer(move, 100)
 
 
-def coloringfood():
+def coloring_food():
+    """
+Cambia el color de la comida en cada corrida aleatoriamente 
+"""
     
-    randcfood=randrange(0,5)
-    
+    randcfood=randrange(0,5)# Escoge un valor entre 0 y 4
+  # Escoge un color diferente dependiendo del número  
     if(randcfood==0):
         return 'BLUE'
     
@@ -64,10 +68,13 @@ def coloringfood():
         return 'TEAL'     
 
 
-def coloringsnake():
+def coloring_snake():
+    """
+Cambia el color de la serpiente en cada corrida aleatoriamente 
+"""
     
-    randcsnake=randrange(0,5)
-    
+    randcsnake=randrange(0,5)# Escoge un valor entre 0 y 4 
+    # Escoge un color diferente dependiendo del número 
     if(randcsnake==0):
         return 'ORANGE'
     
@@ -83,9 +90,10 @@ def coloringsnake():
     elif(randcfood==4):
          return 'MAGENTA'
 
-
-food_color = coloringfood()       
-snake_color = coloringsnake()
+# Guarda el color aleatorio de la comida  
+food_color = coloring_food()
+# Guarda el color aleatorio de la serpiente
+snake_color = coloring_snake()
 
 
 setup(420, 420, 370, 0)
