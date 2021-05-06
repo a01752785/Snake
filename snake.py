@@ -93,23 +93,23 @@ def coloring_food():
 
     """
     
-    randcfood=randrange(0,5) # Escoge un valor entre 0 y 4
+    randcfood=randrange(0, 5) # Escoge un valor entre 0 y 4
     
     # Escoge un color diferente dependiendo del número 
 
-    if(randcfood==0):
+    if(randcfood == 0):
         return 'BLUE'
     
-    elif(randcfood==1):
+    elif(randcfood == 1):
         return 'PINK'
     
-    elif(randcfood==2):
+    elif(randcfood == 2):
         return 'YELLOW'
     
-    elif(randcfood==3):
+    elif(randcfood == 3):
         return 'GREEN'
     
-    elif(randcfood==4):
+    elif(randcfood == 4):
         return 'TEAL'     
 
 
@@ -120,23 +120,23 @@ def coloring_snake():
     
     """
     
-    randcsnake=randrange(0,5)# Escoge un valor entre 0 y 4 
+    randcsnake=randrange(0, 5)# Escoge un valor entre 0 y 4 
     
     # Escoge un color diferente dependiendo del número 
     
-    if(randcsnake==0):
+    if(randcsnake == 0):
         return 'ORANGE'
     
-    elif(randcsnake==1):
+    elif(randcsnake == 1):
         return 'GREEN4'
     
-    elif(randcsnake==2):
+    elif(randcsnake == 2):
         return 'BLACK'
     
-    elif(randcsnake==3):
+    elif(randcsnake == 3):
         return 'CYAN'
     
-    elif(randcfood==4):
+    elif(randcsnake == 4):
          return 'MAGENTA'
 
         
