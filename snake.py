@@ -37,11 +37,56 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, snake_color)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, food_color)
     update()
     ontimer(move, 100)
+
+
+def coloringfood():
+    
+    randcfood=randrange(0,5)
+    
+    if(randcfood==0):
+        return 'BLUE'
+    
+    elif(randcfood==1):
+        return 'PINK'
+    
+    elif(randcfood==2):
+        return 'YELLOW'
+    
+    elif(randcfood==3):
+        return 'GREEN'
+    
+    elif(randcfood==4):
+        return 'TEAL'     
+
+
+def coloringsnake():
+    
+    randcsnake=randrange(0,5)
+    
+    if(randcsnake==0):
+        return 'ORANGE'
+    
+    elif(randcsnake==1):
+        return 'GREEN4'
+    
+    elif(randcsnake==2):
+        return 'BLACK'
+    
+    elif(randcsnake==3):
+        return 'CYAN'
+    
+    elif(randcfood==4):
+         return 'MAGENTA'
+
+
+food_color = coloringfood()       
+snake_color = coloringsnake()
+
 
 setup(420, 420, 370, 0)
 hideturtle()
