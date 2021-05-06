@@ -33,6 +33,20 @@ def move():
         food.y = randrange(-15, 15) * 10
     else:
         snake.pop(0)
+        food_changed = False
+        while not food_changed:
+            food_changed = True
+            dir = randrange(0, 5)
+            if dir == 0 and inside(food + vector(10, 0)):
+                food.move(vector(10, 0))
+            elif dir == 1 and inside(food + vector(0, 10)):
+                food.move(vector(0, 10))
+            elif dir == 2 and inside(food + vector(-10, 0)):
+                food.move(vector(-10, 0))
+            elif dir == 3 and inside(food + vector(0, -10)):
+                food.move(vector(0, -10))
+            else:
+                food_changed = False
 
     clear()
 
