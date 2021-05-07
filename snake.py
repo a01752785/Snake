@@ -6,9 +6,9 @@ from turtle import *  # Importa todas las funciones de turtle
 from random import randrange  # Importa randrange de random
 # Importa funciones vector y square de freegames
 from freegames import square, vector
-food = vector(0, 0)  # posición inicial de comida
-snake = [vector(10, 0)]  # posición inicial de snake
-aim = vector(0, -10)  # vector de movimiento
+food = vector(0, 0)  # Posición inicial de comida
+snake = [vector(10, 0)]  # Posición inicial de snake
+aim = vector(0, -10)  # Vector de movimiento
 
 
 def change(x, y):
