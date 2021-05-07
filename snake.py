@@ -162,5 +162,5 @@ onkey(lambda: change(0, -10), 'Down')
 
 # Inicia el juego
 move()
-
+# Termina el juego
 done()
