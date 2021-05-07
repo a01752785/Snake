@@ -4,9 +4,9 @@ SemanaTEC Proyecto 2
 
 Originalmente lo que podía hacer el código era: 
 
-  *Poner la comida de color verde y la snake de color negro 
+  * Poner la comida de color verde y la snake de color negro 
   
-  *La comida se queda quieta después de cambiar de lugar 
+  * La comida se queda quieta después de cambiar de lugar 
 
 Los cambios que hicimos fueron: 
 
